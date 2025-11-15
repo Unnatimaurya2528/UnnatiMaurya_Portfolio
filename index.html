@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Unnati Maurya — Portfolio</title>
+<meta name="description" content="Portfolio of Unnati Maurya — Learning today, becoming my best self, leading tomorrow." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent1:#8e2de2; /* purple */
+  --accent2:#ff61d2; /* pink */
+  --bg1: linear-gradient(135deg,#fff3ff,#f2e7ff);
+  --glass: rgba(255,255,255,0.70);
+  --muted:#5b5660;
+  --card-shadow: 0 10px 30px rgba(20,10,40,0.06);
+  --radius:14px;
+  --maxw:1100px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg1);color:#1b1022;-webkit-font-smoothing:antialiased}
+.container{max-width:var(--maxw);margin:0 auto;padding:28px}
+
+/* header */
+.header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:20px;box-shadow:0 8px 30px rgba(142,45,226,0.14)}
+.brand h1{margin:0;font-size:20px}
+.tagline{font-size:13px;color:var(--muted)}
+.nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.nav a{color:#250a2a;text-decoration:none;padding:8px 12px;border-radius:10px;font-weight:600;transition:all .18s}
+.nav a:hover{background:rgba(0,0,0,0.04);transform:translateY(-2px)}
+.cta{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;padding:9px 14px;border-radius:12px;text-decoration:none;font-weight:700;box-shadow:0 8px 24px rgba(142,45,226,0.12)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 320px;gap:22px;align-items:center;margin:22px 0}
+.hero-card{background:var(--glass);backdrop-filter:blur(6px);padding:28px;border-radius:var(--radius);box-shadow:var(--card-shadow)}
+.hero h2{margin:0 0 10px;font-size:26px;color:#2a0533}
+.hero p{margin:0;color:var(--muted);line-height:1.6}
+
+/* cards and layout */
+.card{background:white;border-radius:12px;padding:18px;box-shadow:0 8px 26px rgba(30,10,50,0.04)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media (max-width:920px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr} .nav{display:none}}
+
+/* tags, skills */
+.tag{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,#fff0fb,#ffe7f7);color:#6b165a;font-weight:700}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.skill{background:linear-gradient(90deg,#f8eaff,#fff0f6);padding:8px 12px;border-radius:999px;font-weight:700;color:#4b1548}
+
+/* certs */
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:12px}
+.cert{background:linear-gradient(180deg,#fff,#fff9ff);border-radius:10px;padding:14px;text-align:center;box-shadow:0 8px 20px rgba(50,10,70,0.06);cursor:pointer;transition:transform .16s}
+.cert:hover{transform:translateY(-6px)}
+
+/* memories */
+.timeline{display:flex;flex-direction:column;gap:12px}
+.mem{display:flex;gap:12px;align-items:flex-start;background:linear-gradient(180deg,#fff,#fffefc);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(20,10,30,0.04)}
+
+/* small */
+.meta{color:var(--muted);font-size:14px}
+.footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:10px}
+
+/* buttons */
+.btn{padding:10px 14px;border-radius:10px;border:none;cursor:pointer}
+.btn-primary{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;font-weight:700}
+.btn-ghost{background:white;border:1px solid rgba(0,0,0,0.06)}
+
+/* utilities */
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- header -->
+  <header class="header">
+    <div class="brand">
+      <div class="logo">UM</div>
+      <div>
+        <h1>Unnati Maurya</h1>
+        <div class="tagline">Learning today, becoming my best self, leading tomorrow.</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#strengths">Strengths</a>
+      <a href="#goals">Goals</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#memories">Memories</a>
+      <a href="website.html">Work ▸ Website</a>
+      <a href="poetry.html">Work ▸ Poetry</a>
+      <a href="codes.html">Work ▸ Codes</a>
+      <a href="books.html">Work ▸ Books</a>
+    </nav>
+
+    <a class="cta" href="#contact">Contact</a>
+  </header>
+
+  <!-- hero -->
+  <section class="hero">
+    <div class="hero-card">
+      <div class="tag">Student Portfolio</div>
+      <h2>Learning today, becoming my best self, leading tomorrow.</h2>
+      <p>I’m <strong>Unnati Maurya</strong>, a 16-year-old Class 11 (PCB) student at Sunbeam School Robertsganj. I’m driven by curiosity, creativity, and a desire to build — whether through stories, public speaking, or web projects. I blend imagination with growing technical skills and a goal-led mindset to create meaningful work.</p>
+      <div style="margin-top:16px" class="meta">Location: Sonbhadra, Uttar Pradesh • Email: <a href="mailto:Unnati.maurya2528@gmail.com">Unnati.maurya2528@gmail.com</a></div>
+      <div style="margin-top:14px">
+        <a class="btn btn-primary" href="#work">See Work</a>
+        <a class="btn btn-ghost" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <aside class="card">
+      <h3 style="margin:0 0 8px">Quick Facts</h3>
+      <div class="meta">Public speaker • Storyteller • Beginner web coder • Debater • Creative writer</div>
+      <div class="skills" style="margin-top:12px">
+        <div class="skill">Public speaking</div>
+        <div class="skill">Creative writing</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS (basic)</div>
+        <div class="skill">JavaScript (basic)</div>
+        <div class="skill">Leadership</div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p style="line-height:1.7">
+      Hello! I’m <strong>Unnati Maurya</strong>, a curious and creative 16-year-old studying Class 11 (PCB) at <strong>Sunbeam School Robertsganj</strong>. My learning journey has been shaped by active participation in debates, stage performances, story writing, and competitions — experiences that strengthened my confidence and communication skills. I read widely, write stories and poems, and enjoy discovering fascinating facts in general knowledge. Recently, I began learning web development to combine creativity with practical skills — coding projects excite me because they turn ideas into living, interactive things.
+    </p>
+    <p style="line-height:1.6">
+      I am passionate about storytelling and public speaking; these help me express ideas clearly and empathetically. My short-term aim is to strengthen academics and complete meaningful digital projects. Long-term, I aspire to become an entrepreneur who leads with creativity, discipline, and heart.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="card">
+    <h2>Education</h2>
+    <div class="grid">
+      <div>
+        <h3>KG & Early Years</h3>
+        <p class="meta"><strong>The Eden Public School, Adalhat, Mirzapur</strong> — Kindergarten foundation years. Early learning emphasized play, curiosity, and basic social skills.</p>
+
+        <h3 style="margin-top:14px">Class 1 – 10</h3>
+        <p class="meta"><strong>Sunbeam School Robertsganj, Sonbhadra</strong> — Primary & middle schooling where I participated in events, built reading habits, and developed stage confidence, art & sports interest, and teamwork.</p>
+      </div>
+
+      <div>
+        <h3>Class 11 (PCB)</h3>
+        <p class="meta"><strong>Sunbeam School Robertsganj</strong> — Current studies in Physics, Chemistry, Biology. This stage focuses my academic goals and prepares me for competitive tests and project work (BNAT qualified; ASSET cleared).</p>
+        <div style="margin-top:8px" class="meta">Schooling helped me develop public speaking, leadership, presentation skills, and time management.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS (basic)</li>
+          <li>JavaScript (basic)</li>
+          <li>PPT designing</li>
+          <li>Canva designing</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Creative & Soft Skills</h3>
+        <ul>
+          <li>Poetry & story writing</li>
+          <li>Debating & public speaking</li>
+          <li>Singing & stage performance</li>
+          <li>Leadership & teamwork</li>
+          <li>Communication & problem-solving</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strengths & Weaknesses -->
+  <section id="strengths" class="card">
+    <h2>Strengths & Weaknesses</h2>
+    <div class="grid">
+      <div>
+        <h3>Strengths</h3>
+        <ul>
+          <li>Clear communication & stage confidence</li>
+          <li>Curiosity & fast learning</li>
+          <li>Creativity (stories, arts, crafts)</li>
+          <li>Consistency & discipline</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Weaknesses</h3>
+        <ul>
+          <li>Tendency to overthink</li>
+          <li>Being overly self-critical</li>
+          <li>Occasional nervousness before big events (working to improve)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section id="goals" class="card">
+    <h2>Goals</h2>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+      <button class="btn btn-primary" onclick="showGoal('short')">Short-Term Goals</button>
+      <button class="btn btn-ghost" onclick="showGoal('long')">Long-Term Goals</button>
+    </div>
+    <div id="goalShort" style="margin-top:12px">
+      <h4>Short-Term</h4>
+      <ul>
+        <li>Improve coding and build small web projects</li>
+        <li>Strengthen academics in Class 11 & 12</li>
+        <li>Participate in more debates and creative events</li>
+        <li>Improve handwriting and presentation</li>
+      </ul>
+    </div>
+    <div id="goalLong" style="display:none;margin-top:12px">
+      <h4>Long-Term</h4>
+      <ul>
+        <li>Become a successful entrepreneur</li>
+        <li>Combine storytelling and technology to create meaningful products</li>
+        <li>Publish stories and grow as a creative leader</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="card">
+    <h2>Achievements</h2>
+    <p class="meta">(Numbers indicate how many times the award was received)</p>
+    <ul>
+      <li>BYJU’S Super League — Participation</li>
+      <li>BNAT (Class 11) — Qualified</li>
+      <li>ASSET Test — Cleared</li>
+      <li>Ardent Reader Award</li>
+      <li>Best Online Etiquettes Award</li>
+      <li>Best in Art & Craft — <strong>3 times</strong></li>
+      <li>Best in Sports — <strong>3 times</strong></li>
+      <li>Best in Public Speaking — <strong>3 times</strong></li>
+    </ul>
+    <div style="margin-top:12px" class="meta">Participation: Annual Functions, Annual Sports Meets (2015–2021): 50m, 100m, 200m races; Non-thermal Cooking Competitions; ASSET; BYJU’S School Super League; many school events (multiple certificates).</div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates" class="card">
+    <h2>Certificates</h2>
+    <p class="meta">Click a certificate to view (replace placeholder links after uploading your images).</p>
+    <div class="certs" id="certGrid">
+      <div class="cert" onclick="openLightbox(0)">BYJU'S Super League</div>
+      <div class="cert" onclick="openLightbox(1)">BNAT — Qualified</div>
+      <div class="cert" onclick="openLightbox(2)">ASSET — Cleared</div>
+      <div class="cert" onclick="openLightbox(3)">Ardent Reader</div>
+      <div class="cert" onclick="openLightbox(4)">Art & Craft (3x)</div>
+      <div class="cert" onclick="openLightbox(5)">Public Speaking (3x)</div>
+    </div>
+  </section>
+
+  <!-- Memories -->
+  <section id="memories" class="card">
+    <h2>Memories</h2>
+    <div class="timeline">
+      <div class="mem"><strong>Annual Function —</strong> Performed a story enactment and received appreciation.</div>
+      <div class="mem"><strong>Sports Day —</strong> Participated in 100m & 200m races and earned certificates.</div>
+      <div class="mem"><strong>First Portfolio —</strong> Created an earlier portfolio two years ago; it inspired this update.</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p class="meta">Email: <a href="mailto:Unnati.maurya2528@gmail.com">Unnati.maurya2528@gmail.com</a></p>
+    <p class="meta">(This is a public portfolio — avoid sharing sensitive personal details.)</p>
+  </section>
+
+  <div class="footer">© <strong>Unnati Maurya</strong> — Portfolio. Built with care.</div>
+</div>
+
+<!-- lightbox data & scripts -->
+<script>
+const certImages = [
+  'https://via.placeholder.com/1100x800?text=BYJUS+Super+League',
+  'https://via.placeholder.com/1100x800?text=BNAT+Qualified',
+  'https://via.placeholder.com/1100x800?text=ASSET+Cleared',
+  'https://via.placeholder.com/1100x800?text=Ardent+Reader',
+  'https://via.placeholder.com/1100x800?text=Art+and+Craft',
+  'https://via.placeholder.com/1100x800?text=Public+Speaking'
+];
+
+function openLightbox(i){
+  // opens image in a new tab (easy & mobile-friendly)
+  window.open(certImages[i],'_blank');
+}
+
+function showGoal(k){
+  document.getElementById('goalShort').style.display = k==='short' ? 'block' : 'none';
+  document.getElementById('goalLong').style.display = k==='long' ? 'block' : 'none';
+}
+</script>
+</body>
+</html>
